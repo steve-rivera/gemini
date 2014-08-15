@@ -112,6 +112,14 @@ section, footer {
   font-size: 12px;
   vertical-align: super; }
 
+.santander {
+  background: url(images/santander.gif) no-repeat;
+  bottom: 20px;
+  position: fixed;
+  height: 77px;
+  right: -2px;
+  width: 192px; }
+
 .service:after {
   content: '℠'; }
 
