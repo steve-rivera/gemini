@@ -6,6 +6,7 @@ path: /
 
 exclude:
     - .DS_Store
+    - images/.DS_Store
     - .gitignore
     - dandelion.yml
     - index.html.haml
