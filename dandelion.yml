@@ -1,0 +1,12 @@
+adapter: ftp
+host: ftp.highstartgroup.com
+username: gemini@highstartgroup.com
+password: hsg123
+path: /
+
+exclude:
+	- .DS_store
+    - .gitignore
+    - dandelion.yml
+    - index.html.haml
+    - style.css.scss
