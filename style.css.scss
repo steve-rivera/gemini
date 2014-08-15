@@ -140,6 +140,10 @@ section, footer {
 	strong {
 		color: $red;
 	}
+
+	p strong {
+		color: #333;
+	}
 }
 
 .registered:after {
@@ -159,6 +163,13 @@ section, footer {
 
 .service:after {
 	content: '℠';
+}
+
+.smalltext {
+	font-size: 16px;
+	font-weight: 500;
+	margin-top: 20px;
+	text-align: center;
 }
 
 .step {

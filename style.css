@@ -106,6 +106,8 @@ section, footer {
   margin: 60px 100px 0 100px; }
   .question strong {
     color: #eb1515; }
+  .question p strong {
+    color: #333; }
 
 .registered:after {
   content: '®';
@@ -122,6 +124,12 @@ section, footer {
 
 .service:after {
   content: '℠'; }
+
+.smalltext {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+  text-align: center; }
 
 .step {
   box-sizing: border-box;
