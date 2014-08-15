@@ -5,7 +5,7 @@ password: hsg123
 path: /
 
 exclude:
-	- .DS_store
+    - .DS_store
     - .gitignore
     - dandelion.yml
     - index.html.haml
