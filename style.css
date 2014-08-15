@@ -1,9 +1,17 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0; }
 
+a {
+  color: #eb1515;
+  font-weight: 400; }
+  a:hover {
+    color: #8e0c0c; }
+
 body {
   background: #eb1515 url(images/bill.png) no-repeat center top;
+  background: #eb1515 url(images/geometry.png);
   color: #333;
   font-family: 'Roboto';
   font-size: 20px; }
@@ -27,6 +35,7 @@ footer {
 h1 {
   color: #fff;
   font-size: 34px;
+  margin-bottom: 25px;
   text-align: center; }
 
 h2 {
@@ -41,6 +50,7 @@ section, footer {
   background: #eee; }
 
 .bg-red {
+  background: url(images/bill.png) no-repeat top center;
   padding-top: 140px; }
   .bg-red h2, .bg-red p {
     color: #fff; }
@@ -51,6 +61,37 @@ section, footer {
 
 .bg-white {
   background: #fff; }
+
+.button {
+  background: #f8f8f8;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.3);
+  color: #eb1515;
+  display: block;
+  font-size: 34px;
+  font-weight: 100;
+  line-height: .8;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none; }
+  .button span {
+    font-size: 16px;
+    font-weight: 500; }
+  .button:hover {
+    background: #ddd;
+    color: #eb1515; }
+
+.button-dark {
+  background: #eb1515;
+  color: #fff;
+  margin: 60px 100px 0 100px; }
+  .button-dark:hover {
+    background: #8e0c0c;
+    color: #fff; }
+
+.card {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 280px; }
 
 .clearfix {
   clear: both; }
@@ -64,7 +105,15 @@ section, footer {
 .question {
   margin: 60px 100px 0 100px; }
   .question strong {
-    color: red; }
+    color: #eb1515; }
+
+.registered:after {
+  content: '®';
+  font-size: 12px;
+  vertical-align: super; }
+
+.service:after {
+  content: '℠'; }
 
 .step {
   box-sizing: border-box;

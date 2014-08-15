@@ -1,10 +1,22 @@
+$red: #eb1515;
+
 * {
 	margin: 0;
 	padding: 0;
 }
 
+a {
+	color: $red;
+	font-weight: 400;
+
+	&:hover {
+		color: darken($red, 20%);
+	}
+}
+
 body {
-	background: #eb1515 url(images/bill.png) no-repeat center top;
+	background: $red url(images/bill.png) no-repeat center top;
+	background: $red url(images/geometry.png);
 	color: #333;
 	font-family: 'Roboto';
 	font-size: 20px;
@@ -36,6 +48,7 @@ footer {
 h1 {
 	color: #fff;
 	font-size: 34px;
+	margin-bottom: 25px;
 	text-align: center;
 }
 
@@ -54,6 +67,7 @@ section, footer {
 }
 
 .bg-red {
+	background: url(images/bill.png) no-repeat top center;
 	padding-top: 140px;
 
 	h2, p { color: #fff; }
@@ -67,6 +81,46 @@ section, footer {
 
 .bg-white {
 	background: #fff;
+}
+
+.button {
+	background: #f8f8f8;
+	box-shadow: 0 5px 0 rgba(0,0,0,.3);
+	color: $red;
+	display: block;
+	font-size: 34px;
+	font-weight: 100;
+	line-height: .8;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+
+	span {
+		font-size: 16px;
+		font-weight: 500;
+	}
+
+	&:hover {
+		background: #ddd;
+		color: $red;
+	}
+}
+
+.button-dark {
+	background: $red;
+	color: #fff;
+	margin: 60px 100px 0 100px;
+
+	&:hover {
+		background: darken($red, 20%);
+		color: #fff;
+	}
+}
+
+.card {
+	display: block;
+	margin: 0 auto 20px auto;
+	width: 280px;
 }
 
 .clearfix {
@@ -84,8 +138,18 @@ section, footer {
 	margin: 60px 100px 0 100px;
 
 	strong {
-		color: red;
+		color: $red;
 	}
+}
+
+.registered:after {
+	content: '®';
+	font-size: 12px;
+	vertical-align: super;
+}
+
+.service:after {
+	content: '℠';
 }
 
 .step {

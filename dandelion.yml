@@ -3,6 +3,7 @@ host: ftp.highstartgroup.com
 username: gemini@highstartgroup.com
 password: hsg123
 path: /
+passive: true
 
 exclude:
     - .DS_Store
