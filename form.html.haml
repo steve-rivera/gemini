@@ -6,7 +6,9 @@
     %title extra20
     %link{ rel: 'stylesheet', type: 'text/css', href: 'style.css' }
     %link{ rel: 'stylesheet', type: 'text/css', href: 'http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' }
-    %script{ src: "//cdn.optimizely.com/js/793782030.js" }
+    %script{ src: '//cdn.optimizely.com/js/793782030.js' }
+    %script{ src: '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js' }
+    %script{ src: 'scripts/parsley.js' }
 
   %body.form
 
@@ -33,21 +35,21 @@
 
           %p.instructions The only required information are name, email and confirmation of contact permission. All other information on this form is optional.
 
-          %form{ action: 'http://www.highstartgroup.com/santander-pre-order/', enctype: 'multipart/form-data', method: 'post', name: 'form11' }
+          %form{ action: 'http://www.highstartgroup.com/santander-pre-order/', enctype: 'multipart/form-data', method: 'post', name: 'form11', 'data-parsely-validate' => true }
 
             %input{ type: 'hidden', name: 'counter11', value: '61' }
 
-            %label First Name
-            %input{ type: 'text', name: 'wdform_1_element11' }
+            %label First Name*
+            %input{ type: 'text', name: 'wdform_1_element11', required: true }
 
-            %label Last Name
-            %input{ type: 'text', name: 'wdform_2_element11' }
+            %label Last Name*
+            %input{ type: 'text', name: 'wdform_2_element11', required: true }
 
-            %label Email Address
-            %input{ type: 'email', name: 'wdform_3_element11' }
+            %label Email Address*
+            %input{ type: 'text', name: 'wdform_3_element11', required: true }
 
-            %label Verify Email Address
-            %input{ type: 'email', name: 'wdform_4_element11' }
+            %label Verify Email Address*
+            %input{ type: 'text', name: 'wdform_4_element11', required: true }
 
             %label Occupation
             %input{ type: 'text', name: 'wdform_5_element11' }
@@ -121,5 +123,4 @@
           %a{ href: 'http://www.highstartgroup.com' }Learn More About High Start Group
 
         .clearfix
-
 
