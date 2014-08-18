@@ -11,4 +11,5 @@ exclude:
     - .gitignore
     - dandelion.yml
     - index.html.haml
+    - form.html.haml
     - style.css.scss

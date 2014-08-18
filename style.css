@@ -148,3 +148,46 @@ section, footer {
 .wrap {
   margin: 0 auto;
   width: 960px; }
+
+.form .bg-red {
+  padding-top: 190px; }
+.form .bg-red p {
+  width: 600px; }
+.form .bg-white .left-column {
+  float: left;
+  margin-right: 60px;
+  width: 300px; }
+.form .bg-white .right-column {
+  float: left;
+  width: 600px; }
+.form .instructions {
+  margin-bottom: 40px; }
+.form form p {
+  font-size: 15px;
+  font-weight: 300; }
+.form label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 5px;
+  text-transform: uppercase; }
+.form input[type='text'], .form input[type='email'], .form select {
+  box-sizing: border-box;
+  font-size: 20px;
+  margin-bottom: 25px;
+  padding: 10px;
+  width: 100%; }
+.form input[type='checkbox'] {
+  margin-bottom: 25px; }
+.form form .button {
+  background: #eb1515;
+  border: none;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 15px 30px;
+  text-transform: uppercase; }
+  .form form .button:hover {
+    background: #8e0c0c; }
