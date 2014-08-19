@@ -255,4 +255,24 @@ section, footer {
 			background: darken($red, 20%);
 		}
 	}
+
+	#next {
+		display: inline-block;
+	}
+
+	.page2 {
+		display: none;
+	}
+
+	.parsley-error {
+		border: 1px solid $red;
+		margin-bottom: 3px !important;
+	}
+
+	.parsley-errors-list {
+		color: $red;
+		font-size: 13px;
+		list-style: none;
+		margin-bottom: 25px;
+	}
 }

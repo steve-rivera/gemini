@@ -1,0 +1,156 @@
+!!!5
+
+%html
+
+  %head
+    %title extra20
+    %link{ rel: 'stylesheet', type: 'text/css', href: 'style.css' }
+    %link{ rel: 'stylesheet', type: 'text/css', href: 'http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' }
+    %script{ src: '//cdn.optimizely.com/js/793782030.js' }
+    %script{ src: '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js' }
+    %script{ src: 'scripts/parsley.js' }
+
+  %body.form
+
+    .santander
+
+    %section.bg-red
+      .wrap
+        %p.intro-wide
+          Please fill out the details below and we will send you information on how to apply when the
+          %span.service extra20
+          credit card is available. Your information will be kept confidential and we will only contact you with information about the
+          %span.service extra20
+          credit card.
+
+    %section.bg-white
+
+      .wrap
+
+        .left-column
+
+          %img.card{ src: 'images/card.png' }
+
+        .right-column
+
+          %form{ action: 'http://www.highstartgroup.com/santander-pre-order/', enctype: 'multipart/form-data', method: 'post', name: 'form11', id: 'form' }
+
+            .page1
+
+              %input{ type: 'hidden', name: 'counter11', value: '61' }
+
+              %label First Name*
+              %input#firstname{ type: 'text', name: 'wdform_1_element11', required: true }
+
+              %label Last Name*
+              %input#lastname{ type: 'text', name: 'wdform_2_element11', required: true }
+
+              %label Email Address*
+              %input#email{ type: 'text', name: 'wdform_3_element11', required: true }
+
+              %label Verify Email Address*
+              %input#confirmemail{ type: 'text', name: 'wdform_4_element11', required: true }
+
+              %a.button#next Next
+
+            .page2
+
+              %label Occupation
+              %input{ type: 'text', name: 'wdform_5_element11' }
+
+              %label How Many Credit Cards Do You Have?
+              %select{ name: 'wdform_6_element11' }
+                %option{ selected: 'selected', value: '' } Please Select
+                %option{ value: '1' } 1
+                %option{ value: '2' } 2
+                %option{ value: '3' } 3
+                %option{ value: '4' } 4
+                %option{ value: '5+' } 5+
+
+              %label Have You Ever Been Declined For a Credit Card?
+              %select{ name: 'wdform_7_element11' }
+                %option{ selected: 'selected', value: '' } Please Select
+                %option{ value: 'Yes' } Yes
+                %option{ value: 'No' } No
+
+              %label What is your annual total household income?
+              %select{ name: 'wdform_8_element11' }
+                %option{ selected: 'selected', value: '' } Please Select
+                %option{ value: 'Under $25,000' } Under $25,000
+                %option{ value: '$25,000 - $49,999' } $25,000 - $49,999
+                %option{ value: '$50,000 - $74,999' } $50,000 - $74,999
+                %option{ value: '$75,000 - $124,999' } $75,000 - $124,999
+                %option{ value: 'More than $125,000' } More than $125,000
+
+              %p
+                %span.registered Santander
+                requires your permission to contact you when the credit card becomes available.
+              %label
+                %input{ type: 'checkbox', name: 'wdform_12_element110', value: 'Yes please contact me' }
+                Yes Please Contact Me when the credit card becomes available.
+
+              %p
+                %span.registered Santander
+                requires your permission to contact you about other
+                %span.registered Santander
+                products.
+              %label
+                %input{ type: 'checkbox', name: 'wdform_10_element11', value: 'Yes please contact me' }
+                Yes Please Contact Me about other
+                %span.registered Santander
+                Products.
+
+              %input.button{ type: 'submit' }
+
+        .clearfix
+
+    %footer
+
+      .wrap
+
+        .left-column#fineprint
+          %p
+            %img{ src: 'images/housing.png', width: 20 } 
+            Equal Housing Lender. Santander Bank, N.A. is a Member FDIC and a wholly owned subsidiary of Banco Santander, S.A. &copy; 2014 Santander Bank, N.A. All rights reserved. Santander, Santander Bank , the Flame Logo and Extra 20 (in connection with checking account services) are registered trademarks, and A Bank For Your Ideas, Extra 20 and Extra 20 (and Design) in connection with Savings and Credit Card Services) are service marks of Banco Santander, S.A. or its affiliates or subsidiaries in the United States or in other countries.
+          %p
+            &copy; 2014 Santander Bank, N.A.
+            %br
+            %a{ href: 'http://www.santander.com/' } Learn More About Santander Bank
+
+        .right-column#hsgcontact
+          %img{ src: 'images/hsg.png' }
+          %br
+          617-249-0531
+          %br
+          preorders@highstartgroup.com
+          %br
+          %a{ href: 'http://www.highstartgroup.com' }Learn More About High Start Group
+
+        .clearfix
+
+  :javascript
+
+    $(document).ready( function() {
+
+      $('#next').click( function() {
+
+        firstName = $('#firstname').parsley();
+        lastName = $('#lastname').parsley();
+        email = $('#email').parsley();
+        confirmEmail = $('#confirmemail').parsley();
+
+        if ( firstName.isValid() && lastName.isValid() && email.isValid() && confirmEmail.isValid() ) {
+          $('.page1').fadeOut();
+          $('.page2').fadeIn();
+        } else {
+          firstName.validate();
+          lastName.validate();
+          email.validate();
+          confirmEmail.validate();
+        }
+
+      });
+
+
+
+    });

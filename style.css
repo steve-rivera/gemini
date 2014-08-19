@@ -191,3 +191,15 @@ section, footer {
   text-transform: uppercase; }
   .form form .button:hover {
     background: #8e0c0c; }
+.form #next {
+  display: inline-block; }
+.form .page2 {
+  display: none; }
+.form .parsley-error {
+  border: 1px solid #eb1515;
+  margin-bottom: 3px !important; }
+.form .parsley-errors-list {
+  color: #eb1515;
+  font-size: 13px;
+  list-style: none;
+  margin-bottom: 25px; }
