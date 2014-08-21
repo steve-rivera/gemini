@@ -46,10 +46,10 @@
             %input{ type: 'text', name: 'wdform_2_element11', required: true }
 
             %label Email Address*
-            %input{ type: 'text', name: 'wdform_3_element11', required: true }
+            %input#email{ type: 'email', name: 'wdform_3_element11', required: true }
 
             %label Verify Email Address*
-            %input{ type: 'text', name: 'wdform_4_element11', required: true }
+            %input{ type: 'email', name: 'wdform_4_element11', required: true, 'data-parsley-equalto' => '#email' }
 
             %label Occupation
             %input{ type: 'text', name: 'wdform_5_element11' }

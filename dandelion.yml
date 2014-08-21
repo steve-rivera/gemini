@@ -13,4 +13,5 @@ exclude:
     - index.html.haml
     - form.html.haml
     - form2.html.haml
+    - thanks.html.haml
     - style.css.scss
