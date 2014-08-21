@@ -12,4 +12,5 @@ exclude:
     - dandelion.yml
     - index.html.haml
     - form.html.haml
+    - form2.html.haml
     - style.css.scss
